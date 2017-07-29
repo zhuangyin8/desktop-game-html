@@ -1,6 +1,6 @@
 <div id="header" class="public_header">
     <div class="public_header_leftMenu" ui-sref="judgeView({versionId:vm.versionId})">
-        <img  src="image/header/headerbar-back.png">
+        <img src="image/header/headerbar-back.png">
     </div>
     <div class="public_header_rightMenu" data-toggle="modal" data-target="#myModal">
         <img src="image/header/headerbar-close.png">
@@ -10,9 +10,9 @@
 <!-- 模态框（Modal） -->
 <modal modal-id="myModal" text="结束本轮游戏吗？" version-id="{{vm.versionId}}" need-clear="true" go-url="index"></modal>
 <modal modal-id="gameOverModal" text="本轮游戏是否已经结束？" version-id="{{vm.versionId}}" go-url="gameOver"></modal>
-<div class="public_body_days" id="task" >
+<div class="public_body_days" id="task">
     <ul class="days-wrap" id="days-wrap">
-        <li  ng-repeat="daysView in vm.days track by $index">
+        <li ng-repeat="daysView in vm.days track by $index">
             <div class="day-wrap">
                 <div class="day-top" ng-click="$last=!$last"><!--隐藏非最后一天的内容-->
                     第<span ng-bind="daysView.day|daysNumFilter"></span>天
@@ -25,7 +25,8 @@
                         </div>
                         游戏已结束、请进入猜词阶段
                     </div>
-                    <div class="day-content-wrap" ng-hide="$index==vm.days.length-1&&vm.versionId==12&&vm.playerNum.ghost==0">
+                    <div class="day-content-wrap"
+                         ng-hide="$index==vm.days.length-1&&vm.versionId==12&&vm.playerNum.ghost==0">
                         <!--黑夜/白天-->
                         <div class="day-content-{{vm.version.time[0]}}">
                             <!--太阳月亮图标-->
@@ -58,7 +59,8 @@
                             <p class="gameLog-days" ng-show="log.death!=undefined">
                                 {{log.death}}号被{{vm.version.CN.role[log.killer]}}{{vm.version.CN.word[log.deathType]}}，真实身份是{{vm.version.CN.role[log.deathRole]}}
                             </p>
-                            <p class="gameLog-days" ng-show="log.death==undefined">{{vm.version.CN.role[log.killer]}}没有进行任何操作</p>
+                            <p class="gameLog-days" ng-show="log.death==undefined">
+                                {{vm.version.CN.role[log.killer]}}没有进行任何操作</p>
                         </div>
 
                         <!--白天黑夜-->
@@ -72,14 +74,16 @@
                                  ng-repeat="guide2 in vm.version.daysGuide[1]  track by $index"
                                  ng-click="vm.canJumpPage(guide2,1,$index,daysView.day)">
                                 <!--导引框小三角-->
-                                <div class="trigon" ng-class="{'trigonClickOver':(vm.guideHitCount[daysView.day-1].guideHit[guide2].hitCount!=0)}"></div>
+                                <div class="trigon"
+                                     ng-class="{'trigonClickOver':(vm.guideHitCount[daysView.day-1].guideHit[guide2].hitCount!=0)}"></div>
                                 <!--导引框文字-->
                                 {{vm.version.CN.daysGuide[guide2]}}
                             </div>
                         </div>
                         <!--白天黑夜LOG-->
                         <div ng-repeat="log in vm.days[$index].time[vm.version.time[1]]">
-                            <p class="gameLog-days">{{log.death}}号被{{vm.version.CN.role[log.killer]}}{{vm.version.CN.word[log.deathType]}}了，真实身份是{{vm.version.CN.role[log.deathRole]}}</p>
+                            <p class="gameLog-days">
+                                {{log.death}}号被{{vm.version.CN.role[log.killer]}}{{vm.version.CN.word[log.deathType]}}了，真实身份是{{vm.version.CN.role[log.deathRole]}}</p>
                         </div>
                     </div>
                 </div>
@@ -90,7 +94,7 @@
 
     </ul>
     <div style="clear: both"></div>
-<!--footer-->
+    <!--footer-->
     <div id="footer" class="footer-days">
         <button class="footer-button-days footer-button-days-left"
                 data-toggle="modal" data-target="#gameOverModal">

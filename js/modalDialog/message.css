@@ -1,16 +1,16 @@
-.modal-dialog{
-    width:5rem;
-    margin:3rem auto;
+.modal-dialog {
+    width: 5rem;
+    margin: 3rem auto;
 }
 
-.content{
+.content {
     padding: 0;
     border-bottom: 1px solid hsl(219, 100%, 94%);
-    border-radius:0;
+    border-radius: 0;
 
 }
 
-.content-p{
+.content-p {
     margin: 0 auto;
     padding: 0.9rem 0 0.3rem 0;
     text-align: left;
@@ -19,7 +19,8 @@
     color: #0f4068;
     width: 80%;
 }
-.bottom{
+
+.bottom {
     border: none;
     width: 50%;
     height: 0.95rem;
@@ -29,18 +30,22 @@
     background-color: hsla(0, 0%, 0%, 0);
 
 }
-.overflow{
-    overflow:hidden;
+
+.overflow {
+    overflow: hidden;
 }
-.btn-right{
-    float:right;
+
+.btn-right {
+    float: right;
 }
-.btn-left{
-    float:left;
-    border-right:1px solid #dfeaff;
+
+.btn-left {
+    float: left;
+    border-right: 1px solid #dfeaff;
 }
-.modal-content{
-    outline:none;
-    background-color:#ffffff;
+
+.modal-content {
+    outline: none;
+    background-color: #ffffff;
     border-radius: 0.2rem;
 }

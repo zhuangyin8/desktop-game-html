@@ -13,20 +13,18 @@
 <modal modal-id="myModal" text="结束本轮游戏吗？" version-id="{{vm.versionId}}" need-clear="true" go-url="index"></modal>
 
 
-
-
 <div class="viewCard-wrap public_body" ng-controller="viewCardCtrl">
     <div class="viewCard-block">
-        <div class="viewCard-num" ><span ng-bind="vm.See_identity.num"></span></div>
+        <div class="viewCard-num"><span ng-bind="vm.See_identity.num"></span></div>
         <div class="viewCard-logo">
-            <img  ng-src={{vm.See_identity.logo}}>
+            <img ng-src={{vm.See_identity.logo}}>
         </div>
         <p ng-bind="vm.versionList.CN.role[vm.See_identity.role]" class="viewCard-role"></p>
         <p ng-bind="vm.See_identity.guess" class="viewCard-guess"></p>
         <p ng-bind="vm.See_identity.prompt" class="viewCard-prompt"></p>
     </div>
     <div id="footer" class="viewCard-footer">
-        <button type="button" class="viewCard-btn" ng-click="vm.ClickView()" ng-bind="vm.See_identity.Btn " ></button>
+        <button type="button" class="viewCard-btn" ng-click="vm.ClickView()" ng-bind="vm.See_identity.Btn "></button>
     </div>
 </div>
 <!--<script src="js/setWidth.js"></script>-->

@@ -1,11 +1,12 @@
 @charset "utf-8";
 /*内容*/
-div.public_body{
+div.public_body {
     background: #29bde0;
     overflow: auto;
 }
+
 /*页脚*/
-div.footer{
+div.footer {
     position: fixed;
     bottom: 0;
     max-width: 768px;
@@ -13,20 +14,21 @@ div.footer{
     min-width: 320px;
     background: #29bde0;
 }
-.footer-button{
+
+.footer-button {
     display: block;
     width: 80%;
     margin: 7% auto 7% auto;
     font-size: 0.48rem;
-    padding:0.1rem 0;
+    padding: 0.1rem 0;
     color: white;
-    border:0;
+    border: 0;
     background: #fbb435;
     text-align: center;
 }
 
 /*Ul盒子*/
-.playerList{
+.playerList {
     margin: 0 auto 188px auto;
     padding: 0;
     max-width: 768px;
@@ -35,28 +37,33 @@ div.footer{
     text-align: center;
     overflow: hidden;
 }
-.playerList-li{
+
+.playerList-li {
     /*float: left;*/
     /*margin: 0 5.5% 3.5% 5.5%;*/
     cursor: pointer;
 }
-.playerRole{
+
+.playerRole {
     position: relative;
     margin: auto;
     /*width: 80%;*/
     border: 0.05rem white solid;
 }
-.playerStatus{
+
+.playerStatus {
     font-size: 0.3rem;
     line-height: 4;
     background: #f5c97b;
 }
-.playerName{
+
+.playerName {
     font-size: 0.2rem;
     line-height: 1.5;
     color: white;
     background: #83b09a;
 }
+
 /*雪碧图*/
 .sprite {
     margin: 0.15rem 0;
@@ -64,10 +71,12 @@ div.footer{
     width: 100%;
     min-height: 30px;
 }
-.sprite li{
+
+.sprite li {
     display: inline-block;
     margin: auto;
 }
-.death{
+
+.death {
     background: #83b09a;
 }

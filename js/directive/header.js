@@ -3,18 +3,18 @@
  */
 
 // 滑动条与加减号指令
-angular.module("myApp").directive("header1", function() {
+angular.module("myApp").directive("header1", function () {
     return {
-        restrict :'E',
-        scope:{
-            aHrefLeft:'@',
-            aHrefRight:'@',
-            classHeader:'@',
-            classLeft:'@',
-            classRight:'@',
-            title:'@'
+        restrict: 'E',
+        scope: {
+            aHrefLeft: '@',
+            aHrefRight: '@',
+            classHeader: '@',
+            classLeft: '@',
+            classRight: '@',
+            title: '@'
         },
-        templateUrl :"js/directive/header.html"
+        templateUrl: "js/directive/header.html"
 
     };
 });

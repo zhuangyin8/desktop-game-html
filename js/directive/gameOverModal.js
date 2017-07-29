@@ -5,9 +5,9 @@ angular.module("myApp").directive("gameOverModal", function ($state) {
     return {
         restrict: 'E',
         scope: {
-            ID:'@',
-            text:"@",
-            versionId:'@'
+            ID: '@',
+            text: "@",
+            versionId: '@'
         },
         templateUrl: "js/directive/gameOverModal.html",
         link: function ($scope) {
@@ -15,8 +15,8 @@ angular.module("myApp").directive("gameOverModal", function ($state) {
                 jQuery("#gameOverModal").modal("hide");
                 setTimeout(function () {
                     console.log(2);
-                    $state.go("gameOver",({versionId:$scope.versionId}))
-                },500);
+                    $state.go("gameOver", ({versionId: $scope.versionId}))
+                }, 500);
             }
         }
     };

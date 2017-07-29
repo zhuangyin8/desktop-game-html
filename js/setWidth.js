@@ -5,21 +5,21 @@
 var html = document.getElementsByTagName("html")[0];
 var header = document.getElementById("header");
 var footer = document.getElementById("footer");
-var modal=document.getElementsByTagName("modal-dialog")[0];
+var modal = document.getElementsByTagName("modal-dialog")[0];
 var windowWidth = html.clientWidth;
 var windowHeight = html.clientHeight;
 if (windowWidth / windowHeight >= 0.625) {
     var width = windowHeight * 0.625;
     html.style.width = width + "px";
-    if(header!=null){
+    if (header != null) {
         header.style.width = width + "px";
     }
-    if(footer!=null){
+    if (footer != null) {
         footer.style.width = width + "px";
     }
-    if(modal!=null){
-        modal.style.width=width*0.8+ "px";
+    if (modal != null) {
+        modal.style.width = width * 0.8 + "px";
         console.log(modal.style.width)
     }
 }
-html.style.fontSize=width/6.4+'px';
+html.style.fontSize = width / 6.4 + 'px';

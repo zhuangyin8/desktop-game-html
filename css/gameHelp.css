@@ -2,20 +2,21 @@
     font-size: 0.34rem;
 }
 
-.help-wrap{
+.help-wrap {
     background: #FFF;
     height: 100vh;
 }
+
 .gameHelp-content {
     padding-top: 11vh;
-    margin:0 auto;
+    margin: 0 auto;
     width: 5.68rem;
-    background-color:white;
+    background-color: white;
 }
 
-.gameHelp-usingHelp{
-    width:5.65rem;
-    padding-top:9.49vh;
+.gameHelp-usingHelp {
+    width: 5.65rem;
+    padding-top: 9.49vh;
 
 }
 

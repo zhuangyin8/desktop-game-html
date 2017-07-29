@@ -1,72 +1,81 @@
 @charset "utf-8";
 /*显示玩家配比块的高度宽度*/
-.playerSet_match{  /*具体玩家设置显示区域的高度可以根据实际情况动态改变不能写死，需要改^_^*/
-    width:100%;
+.playerSet_match { /*具体玩家设置显示区域的高度可以根据实际情况动态改变不能写死，需要改^_^*/
+    width: 100%;
 }
-.setting_wrap{
-    height:1rem;
+
+.setting_wrap {
+    height: 1rem;
 }
-.playerHeading{
+
+.playerHeading {
     position: relative;
     width: 100%;
     margin-bottom: 3px;
     text-align: center;
     border-right: 1px solid #d9d9d9;
     background-color: #ffffff;
-    border-radius:2px;
+    border-radius: 2px;
     box-shadow: inset 0 -2px 0 #d9d9d9;
 
 }
-.playerHeading p{
+
+.playerHeading p {
 
     font-size: 0.32rem;
     padding: 0.1rem 0;
 }
-.setting_body{
-    padding-top:1.1rem;}
-.playerMatch_show{
+
+.setting_body {
+    padding-top: 1.1rem;
+}
+
+.playerMatch_show {
 
     width: 100%
 }
-.playerMatch_view{
+
+.playerMatch_view {
     width: 100%;
     height: 3.8rem;
     background-color: #fbfbfb;
-    border-bottom:1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
 }
 
-
 /*显示各个子模块的大小*/
-.playerSet_word{
-    position:relative;
-    height:1.8rem;
-    margin-top:0.1rem;
-    background-color:white;
+.playerSet_word {
+    position: relative;
+    height: 1.8rem;
+    margin-top: 0.1rem;
+    background-color: white;
 }
 
 /*用户输入框设置*/
-label{
-    position:absolute;
-    top:0.3rem;
+label {
+    position: absolute;
+    top: 0.3rem;
     left: 0.65rem;;
-    font-size:0;
+    font-size: 0;
 }
-.playNumPrompt{
-    display:inline-block;
+
+.playNumPrompt {
+    display: inline-block;
     font-size: 0.28rem;
     height: 0.4rem;
-    line-height:0.4rem;
+    line-height: 0.4rem;
     vertical-align: middle;
 }
-.playNumPrompt_span{
+
+.playNumPrompt_span {
     font-size: 0.2rem;
     color: #fab344;
     padding-left: 0.2rem;
     vertical-align: middle;
     font-weight: 500;
 }
+
 /*设置玩家词组*/
-.player-word{
+.player-word {
 
     font-size: 0.28rem;
     width: 80%;
@@ -77,62 +86,66 @@ label{
     margin: 0;
 }
 
-.playerPeople-word{
+.playerPeople-word {
     width: 3.27rem;
-    border:none;
+    border: none;
     color: #fab344;
     font-size: 0.3rem;
 }
-.placeholder-word{
-    font-size:.2rem;
-    outline:none;
+
+.placeholder-word {
+    font-size: .2rem;
+    outline: none;
 }
 
 /*设置玩家数量按钮*/
-.playNum{
+.playNum {
     width: 0.61rem;
     height: 0.5rem;
     font-size: 0.3rem;
     text-align: center;
-    vertical-align:middle;
-    margin-left:0.1rem;
+    vertical-align: middle;
+    margin-left: 0.1rem;
     border: none;
     color: #fab344;
     background-color: #f0f0f0;
 }
 
-.playerMatch-player{
+.playerMatch-player {
     float: left;
     width: 50%;
-    font-size:0;
+    font-size: 0;
     padding: 0.2rem 0;
 }
-.playerMatch-img{
-    display:inline-block;
-    width:0.5rem;
-    height:0.5rem;
+
+.playerMatch-img {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
     margin-left: .3rem;
-    vertical-align:middle;
+    vertical-align: middle;
 }
-.playerMatch-player img{
-    display:block;
-    width:100%;
+
+.playerMatch-player img {
+    display: block;
+    width: 100%;
 
 }
-.playerMatch-playerName{
+
+.playerMatch-playerName {
     display: inline-block;
     font-size: 0.2rem;
     padding: 0 0.2rem;
-    vertical-align:middle;
+    vertical-align: middle;
 
 }
 
-.playerMatch-playerNumber{
-    font-size:0.2rem;
+.playerMatch-playerNumber {
+    font-size: 0.2rem;
 }
 
 /*设置用户按钮*/
-.playerSet_Button button{
+.playerSet_Button button {
     display: block;
     width: 100%;
     font-size: 0.48rem;

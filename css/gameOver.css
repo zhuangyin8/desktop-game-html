@@ -1,5 +1,5 @@
 @charset "utf-8";
-div.public_body_gameOver{
+div.public_body_gameOver {
     background: #29bde0;
     overflow: auto;
     margin-top: 9vh;
@@ -8,79 +8,94 @@ div.public_body_gameOver{
     min-width: 320px;
     height: 100%;
 }
+
 /*图片*/
-img{
+img {
     width: 100%;
 }
-.win{
-    margin:32px auto 0 auto;
+
+.win {
+    margin: 32px auto 0 auto;
     width: 55%;
 }
+
 /*玩家信息*/
 
-.playerTop{
+.playerTop {
     margin-bottom: 0.2rem;
 }
+
 .result {
-    margin-top:0.8rem ;
+    margin-top: 0.8rem;
     font-size: 0.26rem;
     color: white;
     overflow: hidden;
 }
-.roleNum{
+
+.roleNum {
     padding: 0;
     overflow: hidden;
 
 }
-.roleNum li{
+
+.roleNum li {
     float: left;
     width: 33%;
 }
+
 /*玩家信息包围*/
-.logWrap{
+.logWrap {
     display: inline-block;
     vertical-align: top;
 }
+
 /*gameLog*/
-.gameLog{
+.gameLog {
     margin-bottom: 19%;
     padding: 0;
     background: white;
 }
-.ul-by-gameLog{
+
+.ul-by-gameLog {
     border-bottom: 1px #a6a6a6 solid;
 }
-.ul-by-gameLog li{
+
+.ul-by-gameLog li {
     font-size: 0.26rem;
     line-height: 0.4rem;
     color: #a6a6a6;
     text-align: left;
 }
-.dayNum{
+
+.dayNum {
     font-size: 0.3rem;
     line-height: 0.54rem;
 }
-.gameTime{
+
+.gameTime {
     font-size: 2.6rem;
     line-height: 4rem;
     color: #a6a6a6;
 }
-.time{
+
+.time {
     float: right;
     font-size: 0.2rem;
     color: #c7c7c7;
 }
-    /*页脚*/
-div.footer-gameOver{
+
+/*页脚*/
+div.footer-gameOver {
     position: fixed;
     bottom: 0;
     margin-left: -1.5vw;
     max-width: 768px;
     width: 100%;
-    background: rgba(41,193,243,1);
+    background: rgba(41, 193, 243, 1);
     overflow: hidden;
 }
-.footer-button-gameOver{
+
+.footer-button-gameOver {
     margin: 4%;
     width: 42%;
     font-size: 0.4rem;
@@ -91,5 +106,11 @@ div.footer-gameOver{
     border: none;
     border-radius: 8px;
 }
-.footer-button-gameOver-left{float: left}
-.footer-button-gameOver-right{float: right}
+
+.footer-button-gameOver-left {
+    float: left
+}
+
+.footer-button-gameOver-right {
+    float: right
+}

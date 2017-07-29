@@ -1,8 +1,9 @@
 /**
  * Created by wht719582321 on 2016/8/8.
  */
-var app = angular.module('myApp', ['oc.lazyLoad', 'ui.router','ngAnimate','ui.bootstrap']);
+var app = angular.module('myApp', ['oc.lazyLoad', 'ui.router', 'ngAnimate', 'ui.bootstrap']);
 app.config(projectRouteConfig);
+
 function projectRouteConfig($stateProvider, $urlRouterProvider, $ocLazyLoadProvider) {
     var _lazyLoad = function (loaded) {
         return function ($ocLazyLoad) {
@@ -87,7 +88,7 @@ function projectRouteConfig($stateProvider, $urlRouterProvider, $ocLazyLoadProvi
                 ])
             }
         })
-         //天数
+        //天数
         .state('days', {
             url: '/days?versionId',
             title: '天数',
@@ -168,7 +169,7 @@ function projectRouteConfig($stateProvider, $urlRouterProvider, $ocLazyLoadProvi
                 ])
             }
         })
-    //公告
+        //公告
         .state('game-notice', {
             url: '/game-notice',
             title: '帮助',

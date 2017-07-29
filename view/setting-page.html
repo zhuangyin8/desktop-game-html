@@ -1,4 +1,4 @@
-<div class="public_header setting_wrap" id="header" >
+<div class="public_header setting_wrap" id="header">
     <div class="public_header_leftMenu" ui-sref="index({versionId:gameVersionId})">
         <img class="public_header_leftImg" src="image/header/headerbar-back.png"
              alt="">
@@ -14,26 +14,30 @@
             <div class='playerHeading'>
                 <p>玩家配比</p>
             </div>
-            <div class="playerMatch_view" >
+            <div class="playerMatch_view">
                 <div class="playerMatch-player" ng-repeat="playerName in versionList.role">
                     <div class="playerMatch-img">
                         <img src="image/werewolf-{{versionList.img[$index]}}" alt="">
                     </div>
-                    <p  class="playerMatch-playerName">{{versionList.CN.role[playerName]}} <span class="playerMatch-playerNumber"> {{versionList.playerNum[playerNumDefault][$index]}}</span>&ensp;人</p>
+                    <p class="playerMatch-playerName">{{versionList.CN.role[playerName]}} <span
+                            class="playerMatch-playerNumber"> {{versionList.playerNum[playerNumDefault][$index]}}</span>&ensp;人
+                    </p>
                 </div>
 
             </div>
         </div>
     </div>
-    <div  class="public_playerSet_wrap">
-        <div class="playerSet_word" >
+    <div class="public_playerSet_wrap">
+        <div class="playerSet_word">
             <label for="playerPeople-word" class="player-word" ng-show="versionList.inputCard">
                 水民词组：
-                <input type="text" ng-model="showWaterWord" placeholder="限输入10个字内" id="playerPeople-word" class="playerPeople-word placeholder-word" maxlength="10">
+                <input type="text" ng-model="showWaterWord" placeholder="限输入10个字内" id="playerPeople-word"
+                       class="playerPeople-word placeholder-word" maxlength="10">
             </label>
             <label for="playerSpirit-word" class="player-word" ng-show="versionList.inputCard">
                 幽灵词组：
-                <input type="text" ng-model="showSpiritWord" placeholder="限输入10个字内" id="playerSpirit-word" class="playerPeople-word placeholder-word"  maxlength="10">
+                <input type="text" ng-model="showSpiritWord" placeholder="限输入10个字内" id="playerSpirit-word"
+                       class="playerPeople-word placeholder-word" maxlength="10">
             </label>
         </div>
         <div class="playerSet_word playerSet_Location">
@@ -44,7 +48,7 @@
             </label>
 
         </div>
-        <div class="playerSet_Button" >
+        <div class="playerSet_Button">
             <button ng-click="playerAllot()">去发牌</button>
         </div>
     </div>

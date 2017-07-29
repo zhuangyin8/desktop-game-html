@@ -1,10 +1,10 @@
 <!--Header-->
 <div id="header" class="public_header">
     <div class="public_header_leftMenu" ng-click="vm.goIndex()">
-        <img  src="image/header/bar-home.png">
+        <img src="image/header/bar-home.png">
     </div>
     <!--<div class="public_header_rightMenu">-->
-        <!--<img src="image/header/headerbar-sigh.png">-->
+    <!--<img src="image/header/headerbar-sigh.png">-->
     <!--</div>-->
     <h1>游戏结果</h1>
 </div>
@@ -19,18 +19,30 @@
     <ul class="result">
         <li>
         <li class="playerTop">剩余玩家：</li>
-            <ul class="roleNum">
-                <li ng-repeat="role in vm.version.role">{{vm.version.CN.role[role]}}<span ng-bind="vm.playerNum[role]"></span>人</li>
-            </ul>
+        <ul class="roleNum">
+            <li ng-repeat="role in vm.version.role">{{vm.version.CN.role[role]}}<span
+                    ng-bind="vm.playerNum[role]"></span>人
+            </li>
+        </ul>
         </li>
-        <li ng-if="vm.version.inputCard" ng-repeat="card in vm.version.role">{{vm.version.CN.role[card]}}词汇：{{vm.string[$index]}}</li>
+        <li ng-if="vm.version.inputCard" ng-repeat="card in vm.version.role">
+            {{vm.version.CN.role[card]}}词汇：{{vm.string[$index]}}
+        </li>
     </ul>
     <ul class="gameLog">
         <li>
             <ul class="ul-by-gameLog" ng-repeat="gameLog in vm.days">
                 <li class="dayNum">第<span ng-bind="gameLog.day"></span>天</li>
-                <li class="gameTime">{{vm.version.CN.word[vm.version.time[0]]}}：<div class="logWrap"><p ng-repeat="roleLog1 in gameLog.time[vm.version.time[0]]">{{roleLog1.death}}号被{{vm.version.CN.word[roleLog1.killer]}}{{vm.version.CN.word[roleLog1.deathType]}}了，真实身份是{{vm.version.CN.role[roleLog1.deathRole]}}</p></div></li>
-                <li class="gameTime">{{vm.version.CN.word[vm.version.time[1]]}}：<div class="logWrap"><p ng-repeat="roleLog2 in gameLog.time[vm.version.time[1]]">{{roleLog2.death}}号被{{vm.version.CN.word[roleLog2.killer]}}{{vm.version.CN.word[roleLog2.deathType]}}了，真实身份是{{vm.version.CN.role[roleLog2.deathRole]}}</p></div></li>
+                <li class="gameTime">{{vm.version.CN.word[vm.version.time[0]]}}：
+                    <div class="logWrap"><p ng-repeat="roleLog1 in gameLog.time[vm.version.time[0]]">
+                        {{roleLog1.death}}号被{{vm.version.CN.word[roleLog1.killer]}}{{vm.version.CN.word[roleLog1.deathType]}}了，真实身份是{{vm.version.CN.role[roleLog1.deathRole]}}</p>
+                    </div>
+                </li>
+                <li class="gameTime">{{vm.version.CN.word[vm.version.time[1]]}}：
+                    <div class="logWrap"><p ng-repeat="roleLog2 in gameLog.time[vm.version.time[1]]">
+                        {{roleLog2.death}}号被{{vm.version.CN.word[roleLog2.killer]}}{{vm.version.CN.word[roleLog2.deathType]}}了，真实身份是{{vm.version.CN.role[roleLog2.deathRole]}}</p>
+                    </div>
+                </li>
             </ul>
         </li>
     </ul>

@@ -1,21 +1,22 @@
 /**
  * Created by Raninbow on 2016/10/5.
  */
-angular.module('myApp').controller('judgeViewCtrl',['$scope','gameService','publicFunction','$state',function ($scope,gameService,publicFunction,$state) {
+angular.module('myApp').controller('judgeViewCtrl', ['$scope', 'gameService', 'publicFunction', '$state', function ($scope, gameService, publicFunction, $state) {
     var vm = this;
-    var playerList=localStorage.playerList;
-    var GameObject=JSON.parse(playerList);
-    $scope.GameObject=GameObject;
-    vm.versionId=$state.params.versionId;
-    gameService.getVersonList().then(function(res){
-        vm.versionList=res.data.data[vm.versionId];
+    var playerList = localStorage.playerList;
+    var GameObject = JSON.parse(playerList);
+    $scope.GameObject = GameObject;
+    vm.versionId = $state.params.versionId;
+    gameService.getVersonList().then(function (res) {
+        vm.versionList = res.data.data[vm.versionId];
     });
-    vm.start=function (){
+    vm.start = function () {
         // 存储初始天数
-        if(localStorage.days==undefined&&localStorage.guideHitCount==undefined){
+        if (localStorage.days == undefined && localStorage.guideHitCount == undefined) {
             publicFunction.addInitDay(vm.versionList);
-        }else{}
+        } else {
+        }
 
-        $state.go("days",({versionId:vm.versionId}));
+        $state.go("days", ({versionId: vm.versionId}));
     }
 }]);

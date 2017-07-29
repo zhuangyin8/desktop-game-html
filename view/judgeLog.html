@@ -10,15 +10,15 @@
 <!--主体-->
 <div class="public_body">
     <div class="container-fluid">
-        <ul class="playerList  row " >
+        <ul class="playerList  row ">
             <li class="playerList-li col-xs-4" ng-repeat="player in vm.playerList track by $index">
                 <div class="playerRole">
                     <div class="playerStatus" ng-class='{"death":vm.inquireStatus("death",vm.playerList[$index])}'>
                         {{vm.version.CN.role[player.role]}}
                     </div>
-                    <div class="playerName"><span  ng-bind="player.num"></span>号</div>
+                    <div class="playerName"><span ng-bind="player.num"></span>号</div>
                 </div>
-                <ul class="sprite" >
+                <ul class="sprite">
                     <li ng-repeat="x in player.maniPulate track by $index"><img src="image/{{x}}.png" alt="{{x}}"></li>
                 </ul>
             </li>
