@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <script>
+        (function(){
+            document.addEventListener("DOMContentLoaded",function(){
+                var html=document.documentElement;
+                var windowWidth=html.clientWidth;
+                if(windowWidth>640)windowWidth=640;
+                html.style.fontSize=windowWidth/6.4+'px';
+            },false);
+        })()
+    </script>
+    <title>游戏开始</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="wrap" ui-view=""></div>
+<script src="vendor/jq/jquery-3.0.0.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/oclazyLoad/ocLazyLoad.min.js"></script>
+<script src="vendor/angular-ui-router/angular-ui-router.min.js"></script>
+<script src="vendor/angular-animate/angular-animate.min.js"></script>
+<script src="vendor/angular-ui-bootstrap-tpls/angular-ui-bootstrap-tpls.js"></script>
+<script src="js/router.js"></script>
+<script src="js/service/gameService.js"></script>
+<script src="js/factory/filter.js"></script>
+<script src="js/factory/factory.js"></script>
+<script src="js/constant/constant.js"></script>
+<script src="js/directive/modal.js"></script>
+<script src="js/directive/gameOverModal.js"></script>
+<script src="js/modalDialog/inputBox.js"></script>
+<script src="js/modalDialog/message.js"></script>
+<script src="js/directive/numberic.js"></script>
+<!--<script src="js/setWidth.js"></script>-->
+</body>
+</html>

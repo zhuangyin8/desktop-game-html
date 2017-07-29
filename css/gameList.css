@@ -1,0 +1,265 @@
+@charset "utf-8";
+html{
+    height: 100%;
+}
+.body_homePage{
+    position:relative;
+    width:5.68rem;
+    margin:0 auto;
+
+}
+.show_lastGame{
+    position: relative;
+    height: 10.58vh;
+    width: 100%;
+    border: 1px solid #dad6d6;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.show_lastGame p{
+    font-size:.3rem;
+    font-weight:700;
+    letter-spacing: 1vw;
+    line-height:10.58vh;
+    color:#9a9a9a;
+}
+.show_lastGame_Icon_right{
+    position:absolute;
+    top:3.3vh;
+    right:0.14rem;
+    width:0.4rem;
+    height:0.4rem;
+}
+.show_lastGame_Icon_right img{
+    display:block;
+    width:100%;
+}
+.show_nowGame_wrap{
+    position:absolute;
+    height:72vh;
+    margin-top:4vh;
+    border:1px solid #dad6d6;
+    background-color:white;
+    text-align:center;
+}
+
+.show_nowGame_name{
+    height:8.3vh;
+    width:100%;
+    color:#fbb435;
+    font-size:0.4rem;
+    line-height: 8.3vh;
+    border-bottom:1px solid #fbb435;
+
+}
+
+.show_nowGame_list{
+    margin:2vh 0;
+// height:17.6vh;
+    text-align:center;
+
+}
+
+.show_nowGame_list_name{
+    width:4.7rem;
+    cursor: pointer;
+    margin:0 auto;
+}
+.show_nowGame_list_name h3{
+    height:12.5vh;
+    font-size:0.4rem;
+    font-weight:500;
+    letter-spacing: 1vw;
+    line-height: 12.5vh;
+    color:white;
+    background-color:#69d1e9;
+}
+.show_nowGame_list_message{
+    font-size:0.2453rem;
+    color:#787878;
+    padding-top:2vh;
+}
+
+.show_nowGame_nav{
+    position: absolute;
+    bottom: 3vh;
+    left: 0;
+    right: 0;
+    height: 0.18rem;
+    width: 0.6rem;
+    margin: 0 auto;
+    z-index:1000;
+}
+.show_nowGame_navCircle{
+    float:left;
+    font-size:0.1rem;
+    width:0.18rem;
+    height:0.18rem;
+    line-height:0.18rem;
+    margin: 0 0.05rem;
+    border-radius:50%;
+    background-color:#f0f0f0;
+    text-align:center;
+}
+
+.show_nowGame_list_shade{
+    position: relative;
+    margin-top: 4vh;
+    height: 72vh;
+    text-align: center;
+}
+
+.show_nowGame_Icon_right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.35rem;
+    width: 0.28rem;
+    height: 0.56rem;
+    z-index:1000;
+    margin: auto 0;
+    padding-top: 19vh;
+    cursor: pointer;
+}
+.show_nowGame_Icon_right img{
+    display:block;
+    width:100%;
+}
+.show_nowGame_Icon_left{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.35rem;
+    width: 0.28rem;
+    height: 0.56rem;
+    z-index:1000;
+    padding-top: 19vh;
+    margin: auto 0;
+    cursor: pointer;
+}
+.show_nowGame_Icon_left img{
+    display:block;
+    width:100%;
+}
+
+/*切换动画 目前没有用到*/
+.gameListAnimate{
+    transition:1s all;
+    position:absolute;
+}
+.gameListAnimate.ng-enter{
+    opacity:0;
+}
+.gameListAnimate.ng-enter-active{
+    opacity:1;
+}
+
+.gameListAnimate.ng-leave{
+    opacity:1;
+}
+.gameListAnimate.ng-leave-active{
+    opacity:0;
+}
+
+.current{
+    color:white;
+    background-color:#fbb435;
+  }
+
+/*侧边栏*/
+/*遮罩层+动画*/
+/*.sideBar-shade{*/
+    /*position: absolute;*/
+
+    /*top: 9vh;*/
+    /*bottom: 0;*/
+    /*background: rgba(0,0,0,.25);*/
+    /*z-index: 1000;*/
+    /*transition:4s linear all;*/
+/*}*/
+/*.sideBar-shade.on-add{*/
+    /*opacity:0;*/
+/*}*/
+/*.sideBar-shade.on{*/
+   /*opacity:1;*/
+    /*right:0;*/
+    /*left:0;*/
+/*}*/
+/*.sideBar-shade.on-remove{*/
+    /*opacity:0;*/
+/*}*/
+
+/*!*侧边栏*!*/
+/*!*菜单+动画*!*/
+/*.showList-sideBar.on-add{*/
+    /*left:-5rem;*/
+/*}*/
+/*.showList-sideBar.on{*/
+    /*left:0;*/
+    /*opacity:1;*/
+/*}*/
+/*.showList-sideBar.on-remove{*/
+    /*left:-5rem;*/
+/*}*/
+/*.showList-sideBar{*/
+    /*position: absolute;*/
+    /*top: 9vh;*/
+    /*left: -5rem;*/
+    /*width: 5rem;*/
+    /*height: 91vh;*/
+    /*opacity:0;*/
+    /*background-color: white;*/
+    /*z-index: 1001;*/
+    /*transition:0.5s linear all;*/
+/*}*/
+
+/*.showList-sideBar ul{*/
+    /*padding: 0;*/
+/*}*/
+/*.showList-sideBar li{*/
+    /*font-size: 0.3rem;*/
+    /*color: #22c0d9;*/
+    /*padding:2vh 0;*/
+    /*border-bottom:1px #d6d6d6 solid ;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.showList-sideBar li i{*/
+    /*float: right;*/
+    /*display: inline-block;*/
+    /*width: 0.4rem;*/
+    /*height: 0.4rem;*/
+    /*margin: 0 0.37rem;*/
+    /*background-color: transparent;*/
+
+    /*vertical-align: top;*/
+/*}*/
+/*.showList-sideBar li span{*/
+    /*display: inline-block;*/
+    /*width: 0.4rem;*/
+    /*height: 0.4rem;*/
+    /*margin: 0 0.37rem;*/
+    /*background-color: transparent;*/
+    /*vertical-align: top;*/
+/*}*/
+
+/*.showList-sideBar li span img{*/
+    /*display:block;*/
+    /*width:100%;*/
+/*}*/
+
+/*.showList-sideBar li i img {*/
+    /*display:block;*/
+    /*height:100%;*/
+/*}*/
+.
+/*媒体查询*/
+@media screen and (min-width: 690px) and (max-width: 768px) {
+    .show_nowGame_Icon_left{
+        left: 0.7rem;
+    }
+    .show_nowGame_Icon_right{
+        right:0.7rem;
+    }
+}

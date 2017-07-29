@@ -1,0 +1,54 @@
+<!--header-->
+<div id="header" class="public_header">
+    <!--<div class="public_header_leftMenu">-->
+    <!--<img  src="image/header/logHeaderLeft.png">-->
+    <!--</div>-->
+    <div class="public_header_rightMenu" data-toggle="modal" data-target="#myModal">
+        <img src="image/header/headerbar-close.png">
+    </div>
+    <h1 ng-bind="vm.version.text[vm.role].top"></h1>
+</div>
+<!--End header-->
+
+<!-- 模态框（Modal） -->
+<modal modal-id="myModal" text="结束本轮游戏吗？" version-id="{{vm.versionId}}" need-clear="true" go-url="index"></modal>
+
+
+<!--当需要输入杀人者序号信息时用-->
+<!--<p class="pKillerNum" ng-show="vm.version.inputKillerNum">请输入杀人者序号:<input class="inputKillerNum" type="text"-->
+                                                                          <!--ng-model="vm.killerNum">号</p>-->
+
+<!--主体-->
+<div class="public_body current_body">
+    <!--提示框-->
+    <div class="hint"><p ng-bind="vm.version.text[vm.role].hint"></p></div>
+    <p class="action" ng-bind="vm.version.text[vm.role].action"></p>
+    <!--报错不用管，能正常运行-->
+    <!--End 提示框-->
+
+    <div class="container-fluid">
+        <ul class="playerList  row ">
+            <li class="playerList-li col-xs-4" ng-repeat="player in vm.playerList track by $index">
+                <!--玩家方块-->
+                <div class="playerRole"
+                     ng-click="vm.selectPlayer($index)">
+                    <div class="playerStatus" ng-class='{"death":vm.inquireStatus("death",vm.playerList[$index])}'>
+                        {{vm.version.CN.role[player.role]}}
+                    </div>
+                    <div class="playerName"><span ng-bind="player.num"></span>号</div>
+                </div>
+                <!--玩家方块End-->
+                <ul class="sprite">
+                    <li ng-show="vm.show($index,vm.currentSelectPlayer)"><img ng-src="image/{{vm.role}}.png"
+                                                                              alt="{{vm.role}}"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--底部-->
+    <div id="footer" class="footer">
+        <button class="footer-button" ng-click="vm.confirm()">确定</button>
+    </div>
+</div>
+<!--End 主体-->
+<!--<script src="js/setWidth.js"></script>-->

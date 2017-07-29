@@ -1,0 +1,40 @@
+ <!--模态框（Modal）-->
+ <link rel="stylesheet" href="js/directive/modal.css">
+<div class="modal fade in" id="{{modalId}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div class="modal-content content">
+            <div class="modal-body content-p" ng-bind="text">
+                <!--结束本轮游戏吗？-->
+            </div>
+            <div class="overflow modal-footer">
+                <button type="button" class="bottom btn-left" data-dismiss="modal">取消
+                </button>
+                <button type="button" data-dismiss="modal" class="bottom btn-right"  ng-click="backIndex()">
+                    确定
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+ <!--<div class='content'>-->
+     <!--<P class="content-p">{{message}}</P>-->
+ <!--</div>-->
+ <!--<div >-->
+     <!--<button class="bottom btn-right" ng-click="ok()"> 确认 </button>-->
+     <!--<button class="bottom btn-left" ng-click="ok()"> 取消 </button>-->
+ <!--</div>-->
+<!--<div class="container">-->
+    <!--<h2>使用Bootstrap创建模态框</h2>-->
+    <!--<div id="example" class="modal hide fade in" style="display: none; ">-->
+        <!--<div class="modal-body">-->
+            <!--结束本轮游戏吗？-->
+        <!--</div>-->
+        <!--<div class="modal-footer">-->
+            <!--<a href="#" class="btn btn-success">确定</a>-->
+            <!--<a href="#" class="btn" data-dismiss="modal">取消</a>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<p><a data-toggle="modal" href="#example" class="btn btn-primary btn-large">发动演示模态框</a></p>-->
+<!--</div>-->

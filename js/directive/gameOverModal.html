@@ -1,0 +1,18 @@
+<!--模态框（Modal）-->
+<div class="modal fade in" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body" ng-bind="text">
+                <!--本轮游戏是否已经结束？-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"  ng-click="vm.toGameOver()">
+                    确定
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    取消
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>

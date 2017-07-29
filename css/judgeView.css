@@ -1,0 +1,57 @@
+.judgeView-content{
+    overflow-y: auto;
+    width: 100%;
+    background: #29bde0;
+
+    margin-top: 9vh;
+    padding: 0.62rem 0 2rem 0;
+}
+/*防止背景颜色不一致*/
+.judegViewWrap{
+    background-color:#29bde0;
+    height:100vh;
+}
+.judgeView-title{
+    font-size: 0.5rem;
+}
+.judgeView-block{
+    width:6.4rem ;
+    margin: auto;
+    padding-left: 0.46rem;
+}
+.judgeView-box{
+    width: 1.36rem;
+    height: 1.36rem;
+    box-sizing: border-box;
+    border: solid 0.05rem #fff;
+    float: left;
+    text-align: center;
+    margin: 0 0.62rem 0.62rem 0;
+}
+.judgeView-Role{
+    line-height: 0.97rem;
+    background: #f5c97b;
+    font-size: 0.3rem
+}
+.judgeView-Number{
+    line-height: 0.31rem;
+    background: #83b09a;
+    font-size: 0.2277rem;
+    color: #fff;
+}
+.judgeView-footer{
+    position: fixed;
+    bottom: 0;
+    width:6.4rem;
+    height: 1.97rem;
+    background:#29bde0;
+    text-align: center;
+}
+.judgeView-btn{
+    color: #fff;
+    background: #fbb435;
+    font-size: 0.48rem;
+    padding:0.1rem 0;
+    width: 4.9rem;
+    margin-top: 0.5rem;
+}

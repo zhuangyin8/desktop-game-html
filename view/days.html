@@ -1,0 +1,107 @@
+<div id="header" class="public_header">
+    <div class="public_header_leftMenu" ui-sref="judgeView({versionId:vm.versionId})">
+        <img  src="image/header/headerbar-back.png">
+    </div>
+    <div class="public_header_rightMenu" data-toggle="modal" data-target="#myModal">
+        <img src="image/header/headerbar-close.png">
+    </div>
+    <h1>法官台本</h1>
+</div>
+<!-- 模态框（Modal） -->
+<modal modal-id="myModal" text="结束本轮游戏吗？" version-id="{{vm.versionId}}" need-clear="true" go-url="index"></modal>
+<modal modal-id="gameOverModal" text="本轮游戏是否已经结束？" version-id="{{vm.versionId}}" go-url="gameOver"></modal>
+<div class="public_body_days" id="task" >
+    <ul class="days-wrap" id="days-wrap">
+        <li  ng-repeat="daysView in vm.days track by $index">
+            <div class="day-wrap">
+                <div class="day-top" ng-click="$last=!$last"><!--隐藏非最后一天的内容-->
+                    第<span ng-bind="daysView.day|daysNumFilter"></span>天
+                </div>
+                <div class="day-content" ng-show="$last">
+                    <div class="day-content-wrap guideFrame"
+                         ng-show="$index==vm.days.length-1&&vm.versionId==12&&vm.playerNum.ghost==0"
+                         ng-click="vm.guess()">
+                        <div class="trigon">
+                        </div>
+                        游戏已结束、请进入猜词阶段
+                    </div>
+                    <div class="day-content-wrap" ng-hide="$index==vm.days.length-1&&vm.versionId==12&&vm.playerNum.ghost==0">
+                        <!--黑夜/白天-->
+                        <div class="day-content-{{vm.version.time[0]}}">
+                            <!--太阳月亮图标-->
+                            <div class="day-content-img">
+                                <img ng-src="image/{{vm.version.time[0]}}.png">
+                            </div>
+                            <!--太阳月亮图标End-->
+
+                            <!--引导弹框-->
+                            <!--ng-class通过vm.guideHitCount存有的当前天数中当前引导框的点击次数，判断是否点击过，如果不为0则添加名为guideFrameClickOver的class-->
+                            <!--ng-repeat将版本信息中的当前天数所需导引栏信息repeat处-->
+                            <!--ng-click用来判断当前导引框是否点击过，并根据判断结果对导引框点击次数进行修改-->
+                            <!--vm.canJumpPage（）需传入参数1、导引栏名称；2、导引栏索引值；3、当前天数-->
+                            <div class="guideFrame"
+                                 ng-class="{'guideFrameClickOver':(vm.guideHitCount[daysView.day-1].guideHit[guide1].hitCount!=0)}"
+                                 ng-repeat="guide1 in vm.version.daysGuide[0] track by $index"
+                                 ng-click="vm.canJumpPage(guide1,0,$index,daysView.day)">
+                                <!--导引框小三角-->
+                                <div class="trigon"
+                                     ng-class="{'trigonClickOver':(vm.guideHitCount[daysView.day-1].guideHit[guide1].hitCount!=0)}">
+                                </div>
+                                <!--导引框小三角  End-->
+                                <!--导引框文字-->
+                                {{vm.version.CN.daysGuide[guide1]}}
+                            </div>
+                            <!--引导弹框End -->
+                        </div>
+                        <!--黑夜白天LOG-->
+                        <div ng-repeat="log in vm.days[$index].time[vm.version.time[0]]">
+                            <p class="gameLog-days" ng-show="log.death!=undefined">
+                                {{log.death}}号被{{vm.version.CN.role[log.killer]}}{{vm.version.CN.word[log.deathType]}}，真实身份是{{vm.version.CN.role[log.deathRole]}}
+                            </p>
+                            <p class="gameLog-days" ng-show="log.death==undefined">{{vm.version.CN.role[log.killer]}}没有进行任何操作</p>
+                        </div>
+
+                        <!--白天黑夜-->
+                        <div class="day-content-{{vm.version.time[1]}}">
+
+                            <div class="day-content-img">
+                                <img ng-src="image/{{vm.version.time[1]}}.png">
+                            </div>
+                            <div class="guideFrame"
+                                 ng-class="{'guideFrameClickOver':(vm.guideHitCount[daysView.day-1].guideHit[guide2].hitCount!=0)}"
+                                 ng-repeat="guide2 in vm.version.daysGuide[1]  track by $index"
+                                 ng-click="vm.canJumpPage(guide2,1,$index,daysView.day)">
+                                <!--导引框小三角-->
+                                <div class="trigon" ng-class="{'trigonClickOver':(vm.guideHitCount[daysView.day-1].guideHit[guide2].hitCount!=0)}"></div>
+                                <!--导引框文字-->
+                                {{vm.version.CN.daysGuide[guide2]}}
+                            </div>
+                        </div>
+                        <!--白天黑夜LOG-->
+                        <div ng-repeat="log in vm.days[$index].time[vm.version.time[1]]">
+                            <p class="gameLog-days">{{log.death}}号被{{vm.version.CN.role[log.killer]}}{{vm.version.CN.word[log.deathType]}}了，真实身份是{{vm.version.CN.role[log.deathRole]}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p ng-repeat="log in vm.days[0].time[vm.version.time[0]]"></p>
+        </li>
+        <div style="clear: both"></div>
+
+    </ul>
+    <div style="clear: both"></div>
+<!--footer-->
+    <div id="footer" class="footer-days">
+        <button class="footer-button-days footer-button-days-left"
+                data-toggle="modal" data-target="#gameOverModal">
+            结束游戏
+        </button>
+        <button class="footer-button-days footer-button-days-right"
+                ui-sref="judgeLog({versionId:vm.versionId})">
+            法官日志
+        </button>
+    </div>
+    <!--footer-End-->
+    <div style="clear: both"></div>
+</div>
+<!--<script src="js/setWidth.js"></script>-->

@@ -1,0 +1,691 @@
+{
+  "name": "versionList",
+  "data": {
+    "11":{
+      "title": "捉鬼游戏简化版",
+      "versionId": "11",
+      "role": ["ghost", "water"],
+      "img":["spirit.png","people.png"],
+      "inputCard":true,
+      "numMin": 4,
+      "numMax":18,
+      "playerNumDefault": 8,
+      "playerNum": {
+        "3": [1, 2],
+        "4": [1, 3],
+        "5": [1, 4],
+        "6": [2, 4],
+        "7": [2, 5],
+        "8": [2, 6],
+        "9": [3, 6],
+        "10": [3, 7],
+        "11": [3, 8],
+        "12": [4, 8],
+        "13": [4, 9],
+        "14": [4, 10],
+        "15": [4, 11],
+        "16": [5, 11],
+        "17": [5, 12],
+        "18": [5, 13]
+      },
+      "showWord":["role","card"],
+      "time": ["daytime", "nighttime"],
+      "daysGuide":[["discuss"],["vote"]],
+      "theDaysGuideCanJump":["discuss","vote"],
+      "daysGuideObject":{
+        "nighttime":["vote"]
+      },
+      "inputKillerNum":false,
+      "canClickDaysGuide":[[],["vote"]],
+      "lastGuide":"vote",
+      "canKiller":["role"],
+      "nightPlayer": ["vote"],
+      "dayPlayer": ["vote"],
+      "status":{
+
+      },
+      "daysGuideCanClick":{
+        "discuss":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "vote":{
+          "canClick":true,
+          "hitCount":0
+        }
+      },
+      "CN": {
+        "role":{
+          "ghost":"幽灵",
+          "water":"水民"
+        },
+        "word":{
+          "num": "数量",
+          "role": "角色",
+          "card": "词组",
+          "vote":"全民投票",
+          "voteDeath":"投死",
+          "ghost":"幽灵",
+          "water":"水民",
+          "daytime":"白天",
+          "nighttime":"黑夜"
+        },
+        "daysGuide":{
+          "discuss":"讨论",
+          "vote":"全民投票"
+        },
+        "daysGuideAlert":{
+          "discuss":"请玩家们依次发言讨论"
+        }
+      },
+      "text": {
+          "vote":{
+            "top":"投票",
+            "hint":"发言讨论结束，大家请投票",
+            "action":"点击得票数最多的人的头像"
+          }
+      }
+    },
+    "12":{
+      "title": "捉鬼游戏猜词版",
+      "versionId": "12",
+      "role": ["ghost", "water"],
+      "img":["spirit.png","people.png"],
+      "inputCard":true,
+      "numMin": 4,
+      "numMax":18,
+      "playerNumDefault": 8,
+      "playerNum": {
+        "4": [1, 3],
+        "5": [1, 4],
+        "6": [2, 4],
+        "7": [2, 5],
+        "8": [2, 6],
+        "9": [3, 6],
+        "10": [3, 7],
+        "11": [3, 8],
+        "12": [4, 8],
+        "13": [4, 9],
+        "14": [4, 10],
+        "15": [4, 11],
+        "16": [5, 11],
+        "17": [5, 12],
+        "18": [5, 13]
+      },
+      "showWord":["role","card"],
+      "time": ["daytime", "nighttime"],
+      "daysGuide":[["discuss"],["vote"]],
+      "theDaysGuideCanJump":["discuss","vote"],
+      "daysGuideObject":{
+        "nighttime":["vote"]
+      },
+      "inputKillerNum":false,
+      "canClickDaysGuide":[[],["vote"]],
+      "lastGuide":"vote",
+      "canKiller":["role"],
+      "nightPlayer": ["vote"],
+      "dayPlayer": ["vote"],
+      "status":{
+
+      },
+      "daysGuideCanClick":{
+        "discuss":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "vote":{
+          "canClick":true,
+          "hitCount":0
+        }
+      },
+      "CN": {
+        "role":{
+          "ghost":"幽灵",
+          "water":"水民"
+        },
+        "word":{
+          "num": "数量",
+          "role": "角色",
+          "card": "词组",
+          "vote":"全民投票",
+          "voteDeath":"投死",
+          "ghost":"幽灵",
+          "water":"水民",
+          "daytime":"白天",
+          "nighttime":"黑夜"
+        },
+        "daysGuide":{
+          "discuss":"讨论",
+          "vote":"全民投票"
+        },
+        "daysGuideAlert":{
+          "discuss":"请玩家们依次发言讨论"
+        }
+      },
+      "text": {
+        "vote":{
+          "top":"投票",
+          "hint":"发言讨论结束，大家请投票",
+          "action":"点击得票数最多的人的头像"
+        }
+      }
+    },
+    "13":{
+      "title": "捉鬼游戏杀人版",
+      "versionId": "13",
+      "role": ["ghost", "water"],
+      "img":["spirit.png","people.png"],
+      "inputCard":true,
+      "numMin": 4,
+      "numMax":18,
+      "playerNumDefault": 8,
+      "playerNum": {
+        "4": [1, 3],
+        "5": [1, 4],
+        "6": [2, 4],
+        "7": [2, 5],
+        "8": [2, 6],
+        "9": [3, 6],
+        "10": [3, 7],
+        "11": [3, 8],
+        "12": [4, 8],
+        "13": [4, 9],
+        "14": [4, 10],
+        "15": [4, 11],
+        "16": [5, 11],
+        "17": [5, 12],
+        "18": [5, 13]
+      },
+      "showWord":["role","card"],
+      "time": ["daytime", "nighttime"],
+      "daysGuide":[["discuss","electioneeringa"],["vote"]],
+      "theDaysGuideCanJump":["discuss","electioneeringa","vote"],
+      "daysGuideObject":{
+        "nighttime":["vote"]
+      },
+      "inputKillerNum":true,
+      "canClickDaysGuide":[[""],["vote"]],
+      "lastGuide":"vote",
+      "nightPlayer": ["vote"],
+      "dayPlayer": ["vote"],
+      "status":{
+
+      },
+      "daysGuideCanClick":{
+        "discuss":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "electioneeringa":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "vote":{
+          "canClick":true,
+          "hitCount":0
+        }
+      },
+      "CN": {
+        "role":{
+          "ghost":"幽灵",
+          "water":"水民"
+        },
+        "word":{
+          "num": "数量",
+          "role": "角色",
+          "card": "词组",
+          "vote":"全民投票",
+          "voteDeath":"投死",
+          "ghost":"幽灵",
+          "water":"水民",
+          "daytime":"白天",
+          "nighttime":"黑夜"
+        },
+        "daysGuide":{
+          "discuss":"讨论",
+          "electioneeringa":"玩家举手",
+          "vote":"全民投票"
+        },
+        "daysGuideAlert":{
+          "discuss":"请玩家们依次发言讨论",
+          "electioneeringa":"玩家举手竞选杀人者"
+        }
+      },
+      "text": {
+          "vote":{
+            "top":"投票",
+            "hint":"发言讨论结束，大家请投票",
+            "action":"点击得票数最多的人的头像"
+          }
+      }
+    },
+    "21":{
+      "title": "杀人游戏简单版",
+      "versionId": "21",
+      "role": ["killer", "civilian"],
+      "img":["spirit.png","people.png"],
+      "inputCard":false,
+      "numMin": 4,
+      "numMax":18,
+      "playerNumDefault": 8,
+      "playerNum": {
+        "4": [1, 3],
+        "5": [1, 4],
+        "6": [2, 4],
+        "7": [2, 5],
+        "8": [2, 6],
+        "9": [3, 6],
+        "10": [3, 7],
+        "11": [3, 8],
+        "12": [4, 8],
+        "13": [4, 9],
+        "14": [4, 10],
+        "15": [4, 11],
+        "16": [5, 11],
+        "17": [5, 12],
+        "18": [5, 13]
+      },
+      "showWord":["role"],
+      "time": ["nighttime", "daytime"],
+      "daysGuide":[["killer"],["ghost","player","vote"]],
+      "theDaysGuideCanJump":["killer","ghost","player","vote"],
+      "daysGuideObject":{
+        "nighttime":["killer"],
+        "daytime":["vote"]
+      },
+      "inputKillerNum":false,
+      "canClickDaysGuide":[["killer"],["vote"]],
+      "lastGuide":"vote",
+      "daysGuideCanClick":{
+        "killer":{
+          "canClick":true,
+          "hitCount":0
+        },
+        "ghost":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "player":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "vote":{
+          "canClick":true,
+          "hitCount":0
+        }
+      },
+      "CN": {
+        "role":{
+          "killer":"杀手",
+          "civilian":"平民",
+          "vote":"投票"
+        },
+        "word":{
+          "num": "数量",
+          "role": "角色",
+          "card": "词组",
+          "voteDeath":"投死",
+          "killerDeath":"杀死",
+          "daytime":"白天",
+          "nighttime":"黑夜"
+        },
+        "daysGuide":{
+          "killer":"杀手杀人",
+          "ghost":"亡灵发表遗言",
+          "player":"玩家依次发言",
+          "vote":"全民投票"
+        },
+        "daysGuideAlert":{
+          "ghost":"请死者亮明身份并且发表遗言",
+          "player":"玩家依次发言讨论"
+        }
+      },
+      "text": {
+        "killer":{
+          "top":"杀手杀人",
+          "hint":"杀手请睁眼，杀手请选择要杀的对象",
+          "action":"点击下方玩家头像，对被杀的玩家进行标记"
+        },
+        "vote":{
+          "top":"投票",
+          "hint":"发言讨论结束，大家请投票",
+          "action":"点击得票数最多的人的头像"
+        }
+      }
+    },
+    "22":{
+      "title": "杀人游戏警版",
+      "versionId": "22",
+      "role": ["killer", "police", "civilian"],
+      "img":["spirit.png","police.png","people.png"],
+      "inputCard":false,
+      "numMin": 4,
+      "numMax":18,
+      "playerNumDefault": 8,
+      "playerNum": {
+        "4": [1,1,2],
+        "5": [1,1,3],
+        "6": [1,1,4],
+        "7": [1,1,5],
+        "8": [2,2,4],
+        "9": [2,2,5],
+        "10": [2,2,6],
+        "11": [3,3,5],
+        "12": [3,3,6],
+        "13": [3,3,7],
+        "14": [3,3,8],
+        "15": [4,4,7],
+        "16": [4,4,8],
+        "17": [4,4,9],
+        "18": [5,5,8]
+      },
+      "showWord":["role"],
+      "time": ["nighttime", "daytime"],
+      "daysGuide":[["killer","police"],["ghost","player","vote"]],
+      "theDaysGuideCanJump":["killer","police","ghost","player","vote"],
+      "daysGuideObject":{
+        "nighttime":["killer","police"],
+        "daytime":["vote"]
+      },
+      "inputKillerNum":false,
+      "canClickDaysGuide":[["killer","police"],["vote"]],
+      "lastGuide":"vote",
+      "daysGuideCanClick":{
+        "killer":{
+          "canClick":true,
+          "hitCount":0
+        },
+        "police":{
+          "canClick":true,
+          "hitCount":0
+        },
+        "ghost":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "player":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "vote":{
+          "canClick":true,
+          "hitCount":0
+        }
+      },
+      "CN": {
+        "role":{
+          "killer":"杀手",
+          "police":"警察",
+          "civilian":"平民",
+          "vote":"投票"
+        },
+        "word":{
+          "num": "数量",
+          "role": "角色",
+          "card": "词组",
+          "voteDeath":"投死",
+          "killerDeath":"杀死",
+          "policeDeath":"查看身份",
+          "daytime":"白天",
+          "nighttime":"黑夜",
+          "doctorCure":"治疗",
+          "doctorKiller":"杀死"
+        },
+        "daysGuide":{
+          "killer":"杀手杀人",
+          "police":"警察验人",
+          "ghost":"亡灵发表遗言",
+          "player":"玩家依次发言",
+          "vote":"全民投票"
+        },
+        "daysGuideAlert":{
+          "ghost":"请死者亮明身份并且发表遗言",
+          "player":"请玩家依次发言讨论"
+        }
+      },
+      "text": {
+          "killer":{
+            "top":"杀手杀人",
+            "hint":"杀手请睁眼，杀手请选择要杀的对象",
+            "action":"点击下方玩家头像，对被杀的玩家进行标记"
+          },
+          "police":{
+            "top":"警察查人",
+            "hint":"警察请睁眼，警察请选择要查看身份的对象",
+            "action":"点击下方玩家头像，对查的玩家进行标记"
+          },
+          "vote":{
+            "top":"投票",
+            "hint":"发言讨论结束，大家请投票",
+            "action":"点击得票数最多的人的头像"
+          }
+
+      }
+    },
+    "23":{
+      "title": "杀人游戏3.0",
+      "versionId": "23",
+      "role": ["killer", "police","sniper", "doctor","civilian"],
+       "img":["spirit.png","police.png","sniper.png","witch.png","people.png"],
+      "inputCard":false,
+      "numMin": 5,
+      "numMax":20,
+      "playerNumDefault": 8,
+      "playerNum": {
+        "5": [1,1,1,1,1],
+        "6": [1,1,1,1,2],
+        "7": [1,1,1,1,3],
+        "8": [1,1,1,1,4],
+        "9": [2,1,1,1,4],
+        "10": [2,1,1,1,5],
+        "11": [2,1,1,1,6],
+        "12": [3,2,1,1,5],
+        "13": [3,2,1,1,6],
+        "14": [3,2,1,1,7],
+        "15": [4,3,1,1,6],
+        "16": [4,3,1,1,7],
+        "17": [5,4,1,1,6],
+        "18": [5,4,1,1,7],
+        "19": [5,4,1,1,8],
+        "20": [5,4,1,1,9]
+      },
+      "showWord":["role"],
+      "time": ["nighttime", "daytime"],
+      "daysGuide":[["killer", "police","sniper", "doctor"],["ghost","player","vote"]],
+      "theDaysGuideCanJump":["killer", "police","sniper", "doctor","ghost","player","vote"],
+      "daysGuideObject":{
+        "nighttime":["killer", "police","sniper", "doctor"],
+        "daytime":["vote"]
+      },
+      "inputKillerNum":false,
+      "canClickDaysGuide":[["killer", "police","sniper", "doctor"],["vote"]],
+      "lastGuide":"vote",
+      "daysGuideCanClick":{
+        "killer":{
+          "canClick":true,
+          "hitCount":0
+        },
+        "police":{
+          "canClick":true,
+          "hitCount":0
+        },
+        "sniper":{
+          "canClick":true,
+          "hitCount":0
+        },
+        "doctor":{
+          "canClick":true,
+          "hitCount":0
+        },
+        "ghost":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "player":{
+          "canClick":false,
+          "hitCount":0
+        },
+        "vote":{
+          "canClick":true,
+          "hitCount":0
+        }
+      },
+      "CN": {
+        "role":{
+          "killer":"杀手",
+          "police":"警察",
+          "sniper":"狙击手",
+          "doctor":"医生",
+          "civilian":"平民",
+          "vote":"投票"
+        },
+        "word":{
+          "num": "数量",
+          "role": "角色",
+          "card": "词组",
+          "killerDeath":"杀死",
+          "policeDeath":"查看身份",
+          "sniperDeath":"狙杀",
+          "doctorDeath":"治疗",
+          "voteDeath":"投死",
+          "daytime":"白天",
+          "nighttime":"黑夜"
+        },
+        "daysGuide":{
+          "killer":"杀手杀人",
+          "police":"警察验人",
+          "sniper":"狙击狙人",
+          "doctor":"医生救人",
+          "ghost":"亡灵发表遗言",
+          "player":"玩家依次发言",
+          "vote":"全民投票"
+        },
+        "daysGuideAlert":{
+          "ghost":"请死者亮明身份并且发表遗言",
+          "player":"请玩家依次发言讨论"
+        }
+      },
+      "text": {
+        "killer":{
+          "top":"杀手杀人",
+          "hint":"杀手请睁眼，杀手请选择要杀的对象",
+          "action":"点击下方玩家头像，对被杀的玩家进行标记"
+        },
+        "police":{
+          "top":"警察查人",
+          "hint":"警察请睁眼，警察请选择要查看身份的对象",
+          "action":"点击下方玩家头像，对查的玩家进行标记"
+        },
+        "sniper":{
+          "top":"狙击狙人",
+          "hint":"狙击手请睁眼，请选择要狙杀的对象",
+          "action":"点击下方玩家头像，对被狙杀的玩家进行标记"
+        },
+        "doctor":{
+          "top":"医生救人",
+          "hint":"医生请睁眼，医生请选择要医治的对象",
+          "action":"点击下方玩家头像，对被医治的玩家进行标记"
+        },
+        "vote":{
+          "top":"投票",
+          "hint":"发言讨论结束，大家请投票",
+          "action":"点击得票数最多的人的头像"
+        }
+      },
+    "31": {
+      "title": "狼人杀",
+      "versionId": "31",
+      "role": ["killer", "police","sniper", "doctor","civilian"],
+      "inputCard":false,
+      "numMin": 5,
+      "numMax":20,
+      "playerNumDefault": 8,
+      "playerNum": {
+        "5": [1,1,1,1,1],
+        "6": [1,1,1,1,2],
+        "7": [1,1,1,1,3],
+        "8": [1,1,1,1,4],
+        "9": [2,1,1,1,4],
+        "10": [2,1,1,1,5],
+        "11": [2,1,1,1,6],
+        "12": [3,2,1,1,5],
+        "13": [3,2,1,1,6],
+        "14": [3,2,1,1,7],
+        "15": [4,3,1,1,6],
+        "16": [4,3,1,1,7],
+        "17": [5,4,1,1,6],
+        "18": [5,4,1,1,7],
+        "19": [5,4,1,1,8],
+        "20": [5,4,1,1,9]
+      },
+      "showWord":["role"],
+      "time": ["nighttime", "daytime"],
+      "daysGuide":[["killer", "police","sniper", "doctor"],["ghost","player","vote"]],
+      "inputKillerNum":false,
+      "canClickDaysGuide":[["killer", "police","sniper", "doctor"],["vote"]],
+      "lastGuide":"vote",
+      "CN": {
+        "role":{
+          "killer":"杀手",
+          "police":"警察",
+          "sniper":"狙击手",
+          "doctor":"医生",
+          "civilian":"平民",
+          "vote":"投票"
+        },
+        "word":{
+          "num": "数量",
+          "role": "角色",
+          "card": "词组",
+          "voteDeath":"投死",
+          "killerDeath":"杀死",
+          "policeDeath":"查看身份",
+          "daytime":"白天",
+          "nighttime":"黑夜"
+        },
+        "daysGuide":{
+          "killer":"杀手杀人",
+          "police":"警察验人",
+          "sniper":"狙击狙人",
+          "doctor":"医生救人",
+          "ghost":"亡灵发表遗言",
+          "player":"玩家依次发言",
+          "vote":"全民投票"
+        },
+        "daysGuideAlert":{
+          "ghost":"请死者亮明身份并且发表遗言",
+          "player":"请玩家依次发言讨论"
+        }
+      },
+      "text": {
+        "killer":{
+          "top":"杀手杀人",
+          "hint":"杀手请睁眼，杀手请选择要杀的对象",
+          "action":"点击下方玩家头像，对被杀的玩家进行标记"
+        },
+        "police":{
+          "top":"警察查人",
+          "hint":"警察请睁眼，警察请选择要查看身份的对象",
+          "action":"点击下方玩家头像，对查的玩家进行标记"
+        },
+        "sniper":{
+          "top":"狙击狙人",
+          "hint":"狙击手请睁眼，请选择要狙杀的对象",
+          "action":"点击下方玩家头像，对被狙杀的玩家进行标记"
+        },
+        "doctor":{
+          "top":"医生救人",
+          "hint":"医生请睁眼，医生请选择要医治的对象",
+          "action":"点击下方玩家头像，对被医治的玩家进行标记"
+        },
+        "vote":{
+          "top":"投票",
+          "hint":"发言讨论结束，大家请投票",
+          "action":"点击得票数最多的人的头像"
+        }
+    }
+    }
+    }
+  }
+}
+

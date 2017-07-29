@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+html{
+   // background-color:#29bde0;
+}
+.colWwrap{
+    height:100vh;
+    background-color:#29bde0;
+}
+.LengQiDong{
+    width:4.27rem;
+    margin:auto;
+    padding-top:16.9vh;
+}
+.LengQiDongImg{
+    width:100%;
+}
+.LengQiDongP{
+    font-size:0.4rem;
+    font-weight: 600;
+    color:white;
+    padding-top:7vh;
+    text-align:center;
+}
+.time
+{
+    display: inline-block;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.1rem;
+    font-size:0.6rem;
+    color: #63a7a8;
+}
+.pase{
+    display: inline-block;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 0.4rem;
+    color: #63a7a8;
+    padding: 0.1rem 0.2rem;
+    border: 1px solid #63a7a8;
+    border-radius: 4px;
+    background: transparent;
+    text-decoration: none;
+}

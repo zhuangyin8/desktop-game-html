@@ -1,0 +1,71 @@
+
+.input{
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid hsl(219, 100%, 94%);
+    outline:None;
+}
+.input-margin{
+    margin: 0 auto;
+    padding: 0.9rem 0 0.5rem 0;
+    text-align: left;
+    font-size: 0.4rem;
+    font-weight: 600;
+    color: hsl(207, 75%, 23%);
+    width: 80%;
+}
+input:focus{
+    border: none;
+    width: 100%;
+    outline:None;
+    border-bottom: 2px solid hsl(219, 100%, 94%);
+}
+.failed{
+    color:red;
+}
+.input-bottom{
+    font-size: 0.4rem;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.1rem;
+    background-color: hsl(191, 75%, 52%);
+    border: none;
+    margin: 0.3rem 0.2rem 0.2rem 3rem;
+}
+.modal-dialog{
+    width:5rem;
+    margin:3rem auto;
+}
+
+.content{
+    padding: 0;
+    border-bottom: 1px solid hsl(219, 100%, 94%);
+    border-radius:0;
+
+}
+
+.content-p{
+
+}
+.bottom{
+    border: none;
+    width: 50%;
+    height: 0.95rem;
+    font-size: 0.4rem;
+    font-weight: 600;
+    color: hsl(205, 20%, 56%);
+    background-color: hsla(0, 0%, 0%, 0);
+
+}
+.overflow{
+    overflow:hidden;
+}
+
+.btn-right{
+    float:right;
+    border-left:1px solid #dfeaff;
+}
+.modal-content{
+    outline:none;
+    background-color:#ffffff;
+    border-radius: 0.2rem;
+}

@@ -1,0 +1,77 @@
+/*
+   //rem 来配备设备的宽度，从而来达到在各种手机设备中 元素的宽的比例正常
+   //vh css3的属性 将移动手机viewport的高平均分成100份.1vh代表一份。来匹配手机可视区viewport的高，从而减少出现下拉条的出现
+*/
+html{
+    height: 100%;
+}
+.viewCard-wrap{
+    position: relative;
+    background: #29bde0;
+    height:100%;
+}
+.viewCard-title{
+    font-size: 0.5rem;
+}
+.viewCard-block{
+    position: relative;
+    border: 0.06rem #fff solid;
+    width: 4.5rem;
+    background: #ffedc5;
+    margin: 4vh auto 0 auto;
+}
+.viewCard-logo img{
+    width: 3rem;
+}
+.viewCard-logo{
+    margin: 16.32vh 0 14.78vh 0;
+    text-align: center;
+}
+.viewCard-num{
+    position: absolute;
+    top: -0.38rem;
+    left: 1.9rem;
+    text-align: center;
+    border: solid 0.03rem #ffedc5;
+    border-radius: 50%;
+    color: #f56b81;
+    background: #fff;
+    font-size: 0.4rem;
+    width: 0.68rem;
+    height: 0.68rem;
+}
+.viewCard-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 5.47vh;
+}
+.viewCard-btn{
+    color: #fff;
+    background: #fbb435;
+    width: 4.9rem;
+    font-size: 0.48rem;
+    padding:0.1rem 0;
+}
+.viewCard-role{
+    text-align: center;
+    font-size: 0.4rem;
+    color: #29bde0;
+    line-height: 0.4rem ;
+}
+.viewCard-guess{
+    border-bottom: solid 0.02rem #FFF;
+    line-height: 0.4rem ;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #f56b81;
+    padding: 0.2rem 0 0.3rem 0;
+}
+.viewCard-prompt{
+    width: 3.95rem;
+    margin: 0.34rem auto 0 auto;
+    font-size: 0.26rem;
+    color: #fca000;
+}

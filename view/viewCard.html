@@ -1,0 +1,32 @@
+<div id="header" class="public_header">
+    <div class="public_header_leftMenu" ui-sref="setting({versionId:vm.versionList.versionId})">
+        <img class="public_header_leftImg" src="image/header/headerbar-back.png" alt="">
+    </div>
+    <!-- 这里可以自己天加一个指令来动态控制 -->
+    <span class="viewCard-title">查看身份</span>
+    <div class="public_header_rightMenu" ng-click="showModal()">
+        <img class="public_header_leftImg" src="image/header/headerbar-close.png" alt="">
+    </div>
+</div>
+
+<!-- 模态框（Modal） -->
+<modal modal-id="myModal" text="结束本轮游戏吗？" version-id="{{vm.versionId}}" need-clear="true" go-url="index"></modal>
+
+
+
+
+<div class="viewCard-wrap public_body" ng-controller="viewCardCtrl">
+    <div class="viewCard-block">
+        <div class="viewCard-num" ><span ng-bind="vm.See_identity.num"></span></div>
+        <div class="viewCard-logo">
+            <img  ng-src={{vm.See_identity.logo}}>
+        </div>
+        <p ng-bind="vm.versionList.CN.role[vm.See_identity.role]" class="viewCard-role"></p>
+        <p ng-bind="vm.See_identity.guess" class="viewCard-guess"></p>
+        <p ng-bind="vm.See_identity.prompt" class="viewCard-prompt"></p>
+    </div>
+    <div id="footer" class="viewCard-footer">
+        <button type="button" class="viewCard-btn" ng-click="vm.ClickView()" ng-bind="vm.See_identity.Btn " ></button>
+    </div>
+</div>
+<!--<script src="js/setWidth.js"></script>-->

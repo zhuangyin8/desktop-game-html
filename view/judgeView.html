@@ -1,0 +1,26 @@
+<div class="public_header" id="header">
+    <div class="public_header_leftMenu" ui-sref="viewCard({versionId:vm.versionId})">
+        <img class="public_header_leftImg" src="image/header/headerbar-back.png" alt="" >
+    </div>
+    <!-- 这里可以自己天加一个指令来动态控制 -->
+    <span class="judgeView-title">法官日记</span>
+    <div class="public_header_rightMenu" data-toggle="modal" data-target="#myModal">
+        <img class="public_header_leftImg" src="image/header/headerbar-close.png" alt="">
+    </div>
+</div>
+
+<!-- 模态框（Modal） -->
+<modal modal-id="myModal" text="结束本轮游戏吗？" version-id="{{vm.versionId}}" need-clear="true" go-url="index"></modal>
+
+<div class="judgeView-content judegViewWrap" ng-controller="judgeViewCtrl">
+    <ul class="judgeView-block" >
+        <li class="judgeView-box" ng-repeat="box in GameObject track by $index">
+            <div class="judgeView-Role" ng-bind="vm.versionList.CN.role[box.role]"></div>
+            <p class="judgeView-Number" ng-bind="$index+1+'号'"></p>
+        </li>
+    </ul>
+</div>
+<div class="judgeView-footer" id="footer">
+    <button type="button" class="judgeView-btn" ng-click="vm.start()">开始游戏</button>
+</div>
+<!--<script src="js/setWidth.js"></script>-->

@@ -1,0 +1,191 @@
+@charset "utf-8";
+/*天数包围*/
+html{
+    height: 100%;
+}
+.day-wrap{
+    position: relative;
+    margin: 1.5vw 0;
+}
+.day-top,.day-content{
+    position: relative;
+    background: white;
+    border: 1px #c9c9c9 solid;
+}
+/*days-内容部分样式*/
+.public_body_days{
+    margin-top: 9vh;
+    padding: 1.5vw;
+    max-width: 768px;
+    min-width: 320px;
+    height: 100%;
+    background: #f0f0f0;
+    overflow: auto;
+    -webkit-overflow: overlay;
+}
+
+    /*天数头部*/
+.day-top{
+    margin: 0.1rem 0 !important;
+    height: 0.85rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+    line-height: 0.85rem;
+    text-align: center;
+    color: #29bde0;
+}
+/*小三角伪元素*/
+.day-content:before{
+    content:"";
+    position: absolute;
+    top: -13px;
+    right: 45.8%;
+    width: 0;
+    height: 0;
+    border-right: 15px transparent solid;
+    border-left: 15px transparent solid;
+    border-bottom: 15px white solid;
+}
+.day-content{
+    position: relative;
+    padding: 5.6% 3.2% 5.6% 50px;
+    background: white;
+    border: 1px #c9c9c9 solid;
+}
+/*引导包围*/
+.day-content-wrap{
+    margin:0 2.5vw 0 0;
+    border-left:2px #c9c9c9 solid ;
+}
+.days_body{
+    padding: 1.5vw;
+    background: #f0f0f0;
+}
+.day-content-nighttime,.day-content-daytime{
+    margin-left: 13%;
+    position: relative;
+}
+/*月亮太阳图标伪类*/
+.day-content-img{
+    position: absolute;
+    left: -21.5%;
+    z-index: 10;
+    width: 13%;
+    background: white;
+    /*border: 1px #c9c9c9 solid;*/
+    /*border-radius: 50%;*/
+}
+.day-content-img img{
+    max-width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+/*.day-content-daytime:before{*/
+    /*content:"";*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*left: 17px;*/
+    /*width: 0.6rem;*/
+    /*height:0.6rem;*/
+    /*border: 1px #c9c9c9 solid;*/
+    /*border-radius: 50%;*/
+    /*background: url("/image/daytime.png") 0.12rem 0.12rem no-repeat white ;*/
+/*}*/
+/*.day-content-nighttime:before{*/
+    /*content:"";*/
+    /*position: absolute;*/
+    /*display: block;*/
+    /*left: 17px;*/
+    /*width: 0.6rem;*/
+    /*height:0.6rem;*/
+    /*border: 1px #c9c9c9 solid;*/
+    /*border-radius: 50%;*/
+    /*background: url("/image/nighttime.png") 16px 12px no-repeat white ;*/
+/*}*/
+
+
+/*引导弹框*/
+/*三角形*/
+.trigon{
+    position: absolute;
+    display: block;
+    top: 0.15rem;
+    left: -0.29rem;
+    border-top: 0.15rem transparent solid;
+    border-right: 0.3rem#24a7c6 solid;
+    border-bottom: 0.15rem transparent solid;
+}
+/*导引栏*/
+.guideFrame{
+    position: relative;
+    margin: 18px 0;
+    height: 0.63rem;
+    background: #24a7c6;
+    font-size: 0.3rem;
+    line-height: 0.63rem;
+    text-align: center;
+    color: white;
+}
+/*导引栏点击后变色效果*/
+
+.guideFrameClickOver{
+    background: #83b09a;
+}
+.trigonClickOver{
+    border-right: 0.3rem #83b09a solid;
+}
+
+
+.gameLog-days{
+    font-size: 0.25rem;
+    padding-left: 0.6rem;
+    color: black;
+}
+
+.days-wrap{
+    padding: 0 0 0.82rem 0;
+    margin-bottom: 9%;
+}
+
+
+/*页脚*/
+div.footer-days{
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    margin-left: -1.5vw;
+    max-width: 768px;
+    width: 100%;
+    background: rgba(41,193,243,0.6);
+    overflow: hidden;
+}
+.footer-button-days{
+    margin: 4%;
+    width: 42%;
+    font-size: 0.35rem;
+    line-height: 2.1;
+    color: white;
+    background: #fbb435;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+}
+.footer-button-days-left{float: left}
+.footer-button-days-right{float: right}
+
+/*log按钮*/
+.jndgeLog{
+    position: fixed;
+    top: 55vh;
+    right: 5vw;
+    width: 50px;
+    height: 50px;
+    font-size: 0.2rem;
+    color: white;
+    background: #f5c97b;
+    border: none;
+    border-radius: 50%;
+}
+.jndgeLog:hover{
+    background: #fbb435;
+}

@@ -1,0 +1,58 @@
+
+<div id="header" class="public_header">
+    <!--<div class="public_header_leftMenu" ng-click="side=!side" >-->
+        <!--<img  src="image/header/indexHeader.png" alt="">-->
+    <!--</div>-->
+</div>
+
+<div class="public_body public_body_bg">
+    <div class="public_playerSet_wrap" >
+        <div class="show_lastGame" ng-click="goToSetting()" >
+            <p ng-bind="gameService"></p>
+            <div ng-show="judeg" class="show_lastGame_Icon_right">
+                <img src="image/header/titlebar-right.png" alt="">
+            </div>
+        </div>
+        <!--主体列表-->
+        <div ng-repeat="gameList in gameList" >
+            <div class="show_nowGame_wrap public_playerSet_wrap  " ng-show="active[$index]" ng-repeat="gameTitle in gameList">
+                <h2 class="show_nowGame_name">{{gameTitle.title}}</h2>
+                <div class="show_nowGame_list" ng-repeat="gameList in gameTitle.version">
+                    <div class="show_nowGame_list_name" ui-sref="setting({versionId:gameList.versionId})">
+                        <h3>{{gameList.title}}</h3>
+                    </div>
+                    <p class="show_nowGame_list_message">有{{gameList.versionId}}个用户玩过此游戏</p>
+                </div>
+            </div>
+        </div>
+        <!--圆形下标-->
+        <div class="show_nowGame_nav" ng-repeat="gameListSub in gameList">
+            <div ng-repeat="list in gameListSub" >
+                <div class="show_nowGame_navCircle " ng-class="{true:'current',false:''}[active[$index]]">{{$index+1}}</div>
+            </div>
+        </div>
+        <!--左右箭头-->
+        <div class="show_nowGame_Icon_left" ng-click="changePre()">
+            <img src="image/header/bar-orangeleft.png" alt="">
+        </div>
+        <div class="show_nowGame_Icon_right" ng-click="changeNext()">
+            <img src="image/header/bar-orangeright.png" alt="">
+        </div>
+        <!--玩家公告-->
+        <!--<div class="sideBar-wrap">-->
+            <!--<div class="showList-sideBar " ng-class="{on:side}">-->
+
+                <!--<ul>-->
+                    <!--<li ui-sref="game-notice"><span><img src="image/header/sideBar-notice.png" alt=""></span>公告<i><img src="image/header/sideBar-right.png" alt=""></i></li>-->
+                    <!--<li ><span><img src="image/header/sidebar-setting.png" alt=""></span>设置<i><img src="image/header/sideBar-right.png" alt=""></i></li>-->
+                    <!--<li ui-sref="gameHelp"> <span ><img src="image/header/sideBar-help.png" alt=""></span>帮助<i><img src="image/header/sideBar-right.png" alt=""></i></li>-->
+                    <!--<li ui-sref="gameAbout-us"><span><img src="image/header/sideBar-about.png" alt=""></span>关于<i><img src="image/header/sideBar-right.png" alt=""></i></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="sideBar-shade" ng-class="{on:side}" ng-click="side=!side"></div>-->
+        <!--</div>-->
+
+    </div>
+</div>
+<!--<script src="js/setWidth.js"></script>-->
+

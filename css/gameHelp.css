@@ -1,0 +1,60 @@
+.gameHelp-title {
+    font-size: 0.34rem;
+}
+
+.help-wrap{
+    background: #FFF;
+    height: 100vh;
+}
+.gameHelp-content {
+    padding-top: 11vh;
+    margin:0 auto;
+    width: 5.68rem;
+    background-color:white;
+}
+
+.gameHelp-usingHelp{
+    width:5.65rem;
+    padding-top:9.49vh;
+
+}
+
+.gameHelp-usingHelp li {
+    color: #fbb435;
+    list-style-type: square;
+    line-height: 0.37rem;
+    font-size: 0.26rem;
+    margin-bottom: 0.25rem;
+}
+
+.gameHelp-usingHelp p {
+    color: #868686;
+}
+
+#gameHelp-li {
+    list-style-type: none;
+    font-size: 0.36rem;
+    color: #4e4e4e;
+}
+
+.gameHelp-Help {
+}
+
+.gameHelp-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 5vh;
+}
+
+.gameHelp-footer p {
+    color: #FFF;
+    text-align: center;
+    font-size: 0.4rem;
+    width: 4.9rem;
+    line-height: 0.85rem;
+    margin: 0 auto 0.25rem auto;
+    background: #fbb435;
+
+}
