@@ -159,51 +159,57 @@ html {
 }
 
 /*切换动画 目前没有用到*/
-/*.gameListAnimate{
-    transition:1s all;
-    position:absolute;
-}
-.gameListAnimate.ng-enter{
-    opacity:0;
-}
-.gameListAnimate.ng-enter-active{
-    opacity:1;
+.gameListAnimate {
+    transition: 1s all;
+    position: absolute;
 }
 
-.gameListAnimate.ng-leave{
-    opacity:1;
-}
-.gameListAnimate.ng-leave-active{
-    opacity:0;
+.gameListAnimate.ng-enter {
+    opacity: 0;
 }
 
-.current{
-    color:white;
-    background-color:#fbb435;
-  }
-*/
+.gameListAnimate.ng-enter-active {
+    opacity: 1;
+}
+
+.gameListAnimate.ng-leave {
+    opacity: 1;
+}
+
+.gameListAnimate.ng-leave-active {
+    opacity: 0;
+}
+
+.current {
+    color: white;
+    background-color: #fbb435;
+}
+
 /*侧边栏*/
 /*遮罩层+动画*/
-/*.sideBar-shade{
+.sideBar-shade {
     position: absolute;
 
     top: 9vh;
     bottom: 0;
-    background: rgba(0,0,0,.25);
+    background: rgba(0, 0, 0, .25);
     z-index: 1000;
-    transition:4s linear all;
+    transition: 4s linear all;
 }
-.sideBar-shade.on-add{
-    opacity:0;
+
+.sideBar-shade.on-add {
+    opacity: 0;
 }
-.sideBar-shade.on{
-   opacity:1;
-    right:0;
-    left:0;
+
+.sideBar-shade.on {
+    opacity: 1;
+    right: 0;
+    left: 0;
 }
-.sideBar-shade.on-remove{
-    opacity:0;
-}*/
+
+.sideBar-shade.on-remove {
+    opacity: 0;
+}
 
 /*!*侧边栏*!*/
 /*!*菜单+动画*!*/
@@ -274,7 +280,6 @@ html {
     height: 100%;
 }
 
-.
 
 /*媒体查询*/
 @media screen and (min-width: 690px) and (max-width: 768px) {
