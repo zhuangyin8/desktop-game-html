@@ -1,5 +1,5 @@
 # desktop-game-html
-[预览地址](https://zhuangyin8.github.io/desktop-game-html/#/index):https://zhuangyin8.github.io/desktop-game-html/#/index
+[预览地址](https://zhuangyin8.github.io/desktop-game-html/#/index) 
 
 ## 任务2:桌游精灵身份发放 (48-96小时)
 
