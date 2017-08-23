@@ -1,4 +1,6 @@
 # desktop-game-html
+桌游精灵是一款线下桌游聚会的身份发放工具.支持杀人游戏、捉鬼(谁是卧底)等多款游戏
+
 [预览地址](https://zhuangyin8.github.io/desktop-game-html/#/index) 
 
 ## 任务2:桌游精灵身份发放 (48-96小时)
