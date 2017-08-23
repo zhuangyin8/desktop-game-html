@@ -1,4 +1,3 @@
-@charset "utf-8";
 html {
     height: 100%;
 }
@@ -64,7 +63,11 @@ html {
     margin: 2vh 0;
 / / height: 17.6 vh;
     text-align: center;
+}
 
+.mr-tb-8vh {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 
 .show_nowGame_list_name {
@@ -94,19 +97,19 @@ html {
     bottom: 3vh;
     left: 0;
     right: 0;
-    height: 0.18rem;
-    width: 0.6rem;
+    height: 0.3rem;
+    width: 1rem;
     margin: 0 auto;
     z-index: 1000;
 }
 
 .show_nowGame_navCircle {
     float: left;
-    font-size: 0.1rem;
-    width: 0.18rem;
-    height: 0.18rem;
-    line-height: 0.18rem;
-    margin: 0 0.05rem;
+    font-size: 0.2rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    margin: 0 0.1rem;
     border-radius: 50%;
     background-color: #f0f0f0;
     text-align: center;
@@ -156,117 +159,121 @@ html {
 }
 
 /*切换动画 目前没有用到*/
-.gameListAnimate {
-    transition: 1s all;
-    position: absolute;
+/*.gameListAnimate{
+    transition:1s all;
+    position:absolute;
+}
+.gameListAnimate.ng-enter{
+    opacity:0;
+}
+.gameListAnimate.ng-enter-active{
+    opacity:1;
 }
 
-.gameListAnimate.ng-enter {
-    opacity: 0;
+.gameListAnimate.ng-leave{
+    opacity:1;
+}
+.gameListAnimate.ng-leave-active{
+    opacity:0;
 }
 
-.gameListAnimate.ng-enter-active {
-    opacity: 1;
-}
-
-.gameListAnimate.ng-leave {
-    opacity: 1;
-}
-
-.gameListAnimate.ng-leave-active {
-    opacity: 0;
-}
-
-.current {
-    color: white;
-    background-color: #fbb435;
-}
-
+.current{
+    color:white;
+    background-color:#fbb435;
+  }
+*/
 /*侧边栏*/
 /*遮罩层+动画*/
-/*.sideBar-shade{*/
-/*position: absolute;*/
+/*.sideBar-shade{
+    position: absolute;
 
-/*top: 9vh;*/
-/*bottom: 0;*/
-/*background: rgba(0,0,0,.25);*/
-/*z-index: 1000;*/
-/*transition:4s linear all;*/
-/*}*/
-/*.sideBar-shade.on-add{*/
-/*opacity:0;*/
-/*}*/
-/*.sideBar-shade.on{*/
-/*opacity:1;*/
-/*right:0;*/
-/*left:0;*/
-/*}*/
-/*.sideBar-shade.on-remove{*/
-/*opacity:0;*/
-/*}*/
+    top: 9vh;
+    bottom: 0;
+    background: rgba(0,0,0,.25);
+    z-index: 1000;
+    transition:4s linear all;
+}
+.sideBar-shade.on-add{
+    opacity:0;
+}
+.sideBar-shade.on{
+   opacity:1;
+    right:0;
+    left:0;
+}
+.sideBar-shade.on-remove{
+    opacity:0;
+}*/
 
 /*!*侧边栏*!*/
 /*!*菜单+动画*!*/
-/*.showList-sideBar.on-add{*/
-/*left:-5rem;*/
-/*}*/
-/*.showList-sideBar.on{*/
-/*left:0;*/
-/*opacity:1;*/
-/*}*/
-/*.showList-sideBar.on-remove{*/
-/*left:-5rem;*/
-/*}*/
-/*.showList-sideBar{*/
-/*position: absolute;*/
-/*top: 9vh;*/
-/*left: -5rem;*/
-/*width: 5rem;*/
-/*height: 91vh;*/
-/*opacity:0;*/
-/*background-color: white;*/
-/*z-index: 1001;*/
-/*transition:0.5s linear all;*/
-/*}*/
+.showList-sideBar.on-add {
+    left: -5rem;
+}
 
-/*.showList-sideBar ul{*/
-/*padding: 0;*/
-/*}*/
-/*.showList-sideBar li{*/
-/*font-size: 0.3rem;*/
-/*color: #22c0d9;*/
-/*padding:2vh 0;*/
-/*border-bottom:1px #d6d6d6 solid ;*/
-/*cursor: pointer;*/
-/*}*/
-/*.showList-sideBar li i{*/
-/*float: right;*/
-/*display: inline-block;*/
-/*width: 0.4rem;*/
-/*height: 0.4rem;*/
-/*margin: 0 0.37rem;*/
-/*background-color: transparent;*/
+.showList-sideBar.on {
+    left: 0;
+    /*opacity:1;*/
+}
 
-/*vertical-align: top;*/
-/*}*/
-/*.showList-sideBar li span{*/
-/*display: inline-block;*/
-/*width: 0.4rem;*/
-/*height: 0.4rem;*/
-/*margin: 0 0.37rem;*/
-/*background-color: transparent;*/
-/*vertical-align: top;*/
-/*}*/
+.showList-sideBar.on-remove {
+    left: -5rem;
+}
 
-/*.showList-sideBar li span img{*/
-/*display:block;*/
-/*width:100%;*/
-/*}*/
+.showList-sideBar {
+    position: absolute;
+    top: 9vh;
+    left: -5rem;
+    width: 5rem;
+    height: 91vh;
+    /*opacity:0;*/
+    background-color: white;
+    z-index: 1001;
+    transition: 0.5s linear all;
+}
 
-/*.showList-sideBar li i img {*/
-/*display:block;*/
-/*height:100%;*/
-/*}*/
+.showList-sideBar ul {
+    padding: 0;
+}
+
+.showList-sideBar li {
+    font-size: 0.3rem;
+    color: #22c0d9;
+    padding: 2vh 0;
+    border-bottom: 1px #d6d6d6 solid;
+    cursor: pointer;
+}
+
+.showList-sideBar li i {
+    float: right;
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 0.37rem;
+    background-color: transparent;
+
+    vertical-align: top;
+}
+
+.showList-sideBar li span {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 0.37rem;
+    background-color: transparent;
+    vertical-align: top;
+}
+
+.showList-sideBar li span img {
+    display: block;
+    width: 100%;
+}
+
+.showList-sideBar li i img {
+    display: block;
+    height: 100%;
+}
+
 .
 
 /*媒体查询*/
